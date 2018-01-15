@@ -1,0 +1,15 @@
+component.css -> style
+component.html -> html of component
+component.spec.ts -> tests
+component.ts -> bussiness logic
+module.ts -> configuration bundler of the application for the angular app to work
+
+main.ts -> starts the application and makes everything work
+
+---------------
+components
+
+are the base of the application.
+app component will nest all other components of the app and others components will be declared in his
+components break down logic, styling and designing to make code reuseable.
+---------------
