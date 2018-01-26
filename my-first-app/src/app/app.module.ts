@@ -6,12 +6,14 @@ import { HttpModule } from "@angular/http";
 
 import { AppComponent } from './app.component';
 import { ServerComponent } from './server/server.component';
+import { ServersComponent } from './servers/servers.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    ServerComponent
+    ServerComponent,
+    ServersComponent
   ],
   imports: [
     BrowserModule,
@@ -19,9 +21,6 @@ import { ServerComponent } from './server/server.component';
     HttpModule
   ],
   providers: [],
-  bootstrap: [
-    AppComponent,
-    ServerComponent
-  ]
+  bootstrap: [AppComponent]
 })
 export class AppModule { }
