@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { setTimeout } from 'timers';
 
 @Component({
   // other forms of selecting a component
@@ -6,14 +7,17 @@ import { Component, OnInit } from '@angular/core';
   // selector: '[app-servers]', property selecting
   // selector: '.app-servers',  class selecting
   // be aware that u cannot select by id
-  template: `
-    <app-server></app-server>
-    <app-server></app-server>`,
+  templateUrl: './servers.component.html',
   styleUrls: ['./servers.component.css']
 })
 export class ServersComponent implements OnInit {
+  allowNewServer: boolean = false;
 
-  constructor() { }
+  constructor() {
+    setTimeout(() => {
+      this.allowNewServer = true;
+    }, 2000);
+  }
 
   ngOnInit() {
   }
