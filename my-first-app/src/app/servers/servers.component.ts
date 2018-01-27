@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { setTimeout } from 'timers';
 
 @Component({
   // other forms of selecting a component
