@@ -1,0 +1,10 @@
+<header class="jumbotron bg-info">
+  <div class="form-group">
+    <label for="">Username:</label>
+    <input type="text" placeholder="username" [(ngModel)]="username" class="form-control">
+  </div>
+  <p class="h4 text-center">
+    {{ username }}
+  </p>
+  <button class="btn btn-info" (click)="addUser()" [disabled]="!username">Add user</button>
+</header>
