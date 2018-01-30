@@ -1,0 +1,14 @@
+<button class="btn btn-default" (click)="onToggle()" >
+  Show something
+</button>
+
+<p *ngIf="showSecret" class="text-info">
+  <strong>The secret is:</strong> there is no secret.
+</p>
+
+<ul>
+  <li *ngFor="let n of log; let i = index" [ngStyle]="{backgroundColor: i >= 4 ? 'blue': 'transparent' }"
+  [ngClass]="{'white-txt': i >= 4}">
+    {{ n }}
+  </li>
+</ul>
