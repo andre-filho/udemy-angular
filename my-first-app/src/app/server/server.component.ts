@@ -1,8 +1,17 @@
-import { Component } from "@angular/core";
+import { Component, style } from "@angular/core";
 
 @Component({
   selector: 'app-server',
-  templateUrl: './server.component.html'
+  templateUrl: './server.component.html',
+  styles: [`
+    .online {
+      color: white;
+    }
+
+    .offline {
+      color: gray;
+    }
+  `]
 })
 
 export class ServerComponent {
