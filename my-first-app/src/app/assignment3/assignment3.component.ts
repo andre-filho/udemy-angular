@@ -9,7 +9,7 @@ export class Assignment3Component implements OnInit {
   showSecret :boolean;
   log = [];
 
-  constructor() { 
+  constructor() {
     this.showSecret = false;
   }
 
