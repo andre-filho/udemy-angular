@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+
+  showShoppingList :boolean = false; // false = recipes, true = shopping list
+
+  onUpdateView(booleanValue) {
+    this.showShoppingList = booleanValue;
+  }
+
 }
