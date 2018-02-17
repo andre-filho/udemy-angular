@@ -15,7 +15,7 @@ export class RecipeDetailComponent implements OnInit {
   // eliminates the error caused by an empty element. this is here because this
   // method is called before the constructor().
   ngOnInit() {
-    this.recipe = new Recipe('', '', '');
+    // this.recipe = new Recipe('', '', '');
   }
 
 }

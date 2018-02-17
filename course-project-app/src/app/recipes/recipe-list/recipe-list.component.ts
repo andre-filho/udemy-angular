@@ -10,7 +10,7 @@ import { Recipe } from './../recipe.module';
 export class RecipeListComponent implements OnInit {
   recipes: Recipe[] = [
     new Recipe('A Test Recipe', 'simple desc', 'https://www.campbellsoup.co.uk/img/recipes/6-campbells-vegetarian-pizza-recipe.jpg'),
-    new Recipe('A Test Recipe', 'simple desc', 'https://www.campbellsoup.co.uk/img/recipes/6-campbells-vegetarian-pizza-recipe.jpg')
+    new Recipe('Another Test Recipe', 'simple desc', 'https://www.campbellsoup.co.uk/img/recipes/6-campbells-vegetarian-pizza-recipe.jpg')
   ];
 
   @Output('selectedItem') selected = new EventEmitter<Recipe>(); 
