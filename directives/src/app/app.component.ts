@@ -8,8 +8,8 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'app';
   
-  onlyOdd :boolean      = false;
-  numbers :number[]     = [1, 2, 3, 4, 5];
-  oddNumbers :number[]  = [1,3,5];
+  onlyOdd     :boolean  = false;
+  numbers     :number[] = [1, 2, 3, 4, 5];
+  oddNumbers  :number[] = [1,3,5];
   evenNumbers :number[] = [2, 4];
 }
