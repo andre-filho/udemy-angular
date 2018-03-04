@@ -13,6 +13,10 @@ export class NewAccountComponent {
       name: accountName,
       status: accountStatus
     });
-    console.log('A server status changed, new status: ' + accountStatus);
+    // console.log('A server status changed, new status: ' + accountStatus);
+
+    // below: "this is BULLSHIT"
+    // const service = new LoggingService();
+    // service.logStatusChange(accountStatus);
   }
 }
