@@ -9,7 +9,8 @@ import { AccountsService } from '../accounts.service';
   templateUrl: './new-account.component.html',
   styleUrls: ['./new-account.component.css'],
   // tells angular to provide the thingy that we need for the service
-  providers: [LoggingService, AccountsService]
+  // AccountsService was removed because of the hierarchical thingy 
+  providers: [LoggingService]
 })
 export class NewAccountComponent {
   // this will inject the dependency
